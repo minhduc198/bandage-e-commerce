@@ -2,5 +2,5 @@
   "server": {
     "baseDir": "./"
   },
-  "files": ["./*.html", "./dist/*.css", "./dist/*.js"]
+  "files": ["./*.html", "./dist/*.css", "./dist/*.js", "./dist/**/*.{html,css,js}"]
 }
