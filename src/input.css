@@ -124,3 +124,39 @@ img {
     transform: translate(-50%, -50%) scale(1.8);
   }
 }
+
+.carousel {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.carousel__list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.carousel__item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation-delay: calc(
+    (var(--duration) / var(--quantity)) * (var(--position) - var(--quantity))
+  ) !important;
+  [reverse="true"] & {
+    animation: slide var(--duration) linear infinite;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
+  }
+}

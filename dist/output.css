@@ -716,8 +716,20 @@ html {
   margin-top: 1.5rem;
 }
 
-.mt-\[144px\] {
-  margin-top: 144px;
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
+.mt-\[112px\] {
+  margin-top: 112px;
+}
+
+.mt-\[224px\] {
+  margin-top: 224px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
 }
 
 .mt-\[80px\] {
@@ -772,6 +784,10 @@ html {
   height: 1.5rem;
 }
 
+.h-\[231px\] {
+  height: 231px;
+}
+
 .h-\[316px\] {
   height: 316px;
 }
@@ -803,6 +819,14 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[1054px\] {
+  max-width: 1054px;
+}
+
+.max-w-\[469px\] {
+  max-width: 469px;
 }
 
 .max-w-full {
@@ -860,6 +884,14 @@ html {
   resize: both;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -886,6 +918,10 @@ html {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
 }
 
 .gap-\[24px\] {
@@ -989,6 +1025,11 @@ html {
   padding-bottom: 15px;
 }
 
+.py-\[80px\] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .pb-\[98px\] {
   padding-bottom: 98px;
 }
@@ -1005,12 +1046,12 @@ html {
   padding-right: 53px;
 }
 
-.pt-\[60px\] {
-  padding-top: 60px;
-}
-
 .pt-\[144px\] {
   padding-top: 144px;
+}
+
+.pt-\[60px\] {
+  padding-top: 60px;
 }
 
 .text-center {
@@ -1086,6 +1127,10 @@ html {
 
 .leading-\[80px\] {
   line-height: 80px;
+}
+
+.tracking-\[0\.2px\] {
+  letter-spacing: 0.2px;
 }
 
 .text-black {
@@ -1341,6 +1386,44 @@ img {
   }
 }
 
+.carousel {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.carousel__list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.carousel__item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation-delay: calc(
+    (var(--duration) / var(--quantity)) * (var(--position) - var(--quantity))
+  ) !important;
+  [reverse="true"] & {
+    animation: slide var(--duration) linear infinite;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: calc(var(--width) * -1);
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
@@ -1504,12 +1587,20 @@ img {
     margin-bottom: 112px;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:h-\[540px\] {
     height: 540px;
   }
 
   .lg\:max-w-\[989px\] {
     max-width: 989px;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
