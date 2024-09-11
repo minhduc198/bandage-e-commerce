@@ -1,5 +1,4 @@
 import btn from "./models/button.js";
-import carousel from "./models/carousel.js";
 import menu from "./models/menu.js";
 import video from "./models/video.js";
 
@@ -10,3 +9,5 @@ menu.closeMenu();
 
 video.togglePlayBtn();
 btn.onclickBtn();
+
+// handle A by MinhDuc
