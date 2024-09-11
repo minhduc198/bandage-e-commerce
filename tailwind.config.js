@@ -8,14 +8,21 @@ module.exports = {
       primary: "#1BB275",
       secondary: "#102C5B",
       white: "#ffffff",
+      "black-50": "#252B42",
       black: "#333333",
       grey: "#F6F6F6",
       "grey-100": "#737373",
+      "grey-90": "#BDBDBD",
+      "grey-80": "#D0D0D0",
+      "grey-50": "#EBEBEB",
+
       light: "#DDDDDDB5",
       lightGrey: "#F3F6FD",
       blue: "#23A6F0",
       red: "#E74040",
       "blue-100": "#2A7CC7",
+      "blue-50": "#B2E3FF",
+      green: "#2DC071",
     },
 
     container: {
