@@ -9,3 +9,8 @@ menu.closeMenu();
 
 video.togglePlayBtn();
 btn.onclickBtn();
+
+// featureA
+// featureA
+// featureB
+// featureB
