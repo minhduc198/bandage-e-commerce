@@ -9,5 +9,3 @@ menu.closeMenu();
 
 video.togglePlayBtn();
 btn.onclickBtn();
-
-// handle A by MinhDuc
