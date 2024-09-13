@@ -69,3 +69,5 @@ window.route = route;
 locationHandler();
 
 // router from handleD
+
+// router from handleF
