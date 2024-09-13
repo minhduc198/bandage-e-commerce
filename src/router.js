@@ -67,3 +67,5 @@ window.onpopstate = locationHandler;
 window.route = route;
 // call the urlLocationHandler function to handle the initial url
 locationHandler();
+
+// router from handleD
