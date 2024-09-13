@@ -9,4 +9,5 @@ menu.closeMenu();
 
 video.togglePlayBtn();
 btn.onclickBtn();
-    
+
+// handleB
