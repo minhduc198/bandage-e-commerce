@@ -682,6 +682,14 @@ html {
   z-index: 20;
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -796,6 +804,10 @@ html {
   margin-top: 84px;
 }
 
+.mt-\[192px\] {
+  margin-top: 192px;
+}
+
 .block {
   display: block;
 }
@@ -868,6 +880,10 @@ html {
   height: 100%;
 }
 
+.h-\[530px\] {
+  height: 530px;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -903,6 +919,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .min-w-\[148px\] {
@@ -1092,6 +1112,14 @@ html {
   gap: 5px;
 }
 
+.gap-\[16px\] {
+  gap: 16px;
+}
+
+.gap-\[9px\] {
+  gap: 9px;
+}
+
 .gap-y-\[185px\] {
   row-gap: 185px;
 }
@@ -1239,6 +1267,11 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 44 91 / var(--tw-bg-opacity));
 }
 
 .object-cover {

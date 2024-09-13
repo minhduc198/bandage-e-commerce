@@ -6,10 +6,10 @@ const route = () => {
 };
 
 const routes = {
-  404: {
-    template: "/src/pages/404.html",
-    title: "404",
-    description: "Page not found",
+  "/product": {
+    template: "/src/pages/product.html",
+    title: "Product",
+    description: "This is product",
   },
   "/": {
     template: "/src/pages/home.html",
