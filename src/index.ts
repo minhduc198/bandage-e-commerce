@@ -11,3 +11,5 @@ video.togglePlayBtn();
 btn.onclickBtn();
 
 // handleB
+
+// handleC
