@@ -30,3 +30,5 @@ btn.onclickBtn();
 // Do something
 
 // Do something 2
+// Do somthing
+// console.log(123)
