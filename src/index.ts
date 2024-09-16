@@ -21,3 +21,5 @@ btn.onclickBtn();
 // htac file
 
 // hoan tac 2
+
+// Lam gi do o main trc  khi merge A
