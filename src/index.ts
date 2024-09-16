@@ -17,7 +17,3 @@ btn.onclickBtn();
 // handleD
 
 // ------------------
-
-// htac file
-
-// hoan tac 2
