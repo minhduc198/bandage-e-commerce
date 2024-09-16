@@ -25,3 +25,4 @@ btn.onclickBtn();
 // featureA
 
 // Minh Duc learn FE
+// Lam gi do o main trc  khi merge A
