@@ -22,4 +22,7 @@ btn.onclickBtn();
 
 // hoan tac 2
 
+// featureA
+
+// Minh Duc learn FE
 // Lam gi do o main trc  khi merge A
