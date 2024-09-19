@@ -9,26 +9,3 @@ menu.closeMenu();
 
 video.togglePlayBtn();
 btn.onclickBtn();
-
-// handleB
-
-// handleC
-
-// handleD
-
-// ------------------
-
-// htac file
-
-// hoan tac 2
-
-// featureA
-
-// Minh Duc learn FE
-// Lam gi do o main trc  khi merge A
-
-// Do something
-
-// Do something 2
-
-// Do something 3
