@@ -682,14 +682,6 @@ html {
   z-index: 20;
 }
 
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -756,6 +748,10 @@ html {
   margin-top: 160px;
 }
 
+.mt-\[192px\] {
+  margin-top: 192px;
+}
+
 .mt-\[224px\] {
   margin-top: 224px;
 }
@@ -804,8 +800,8 @@ html {
   margin-top: 84px;
 }
 
-.mt-\[192px\] {
-  margin-top: 192px;
+.ml-\[5px\] {
+  margin-left: 5px;
 }
 
 .block {
@@ -876,12 +872,33 @@ html {
   height: 520px;
 }
 
+.h-\[530px\] {
+  height: 530px;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-\[530px\] {
-  height: 530px;
+.h-\[53px\] {
+  height: 53px;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[full\] {
+  height: full;
+}
+
+.h-\[260px\] {
+  height: 260px;
 }
 
 .w-5 {
@@ -921,8 +938,24 @@ html {
   width: 100%;
 }
 
-.w-\[50\%\] {
+.w-\[700px\] {
+  width: 700px;
+}
+
+.w-\[361px\] {
+  width: 361px;
+}
+
+.w-1\/2 {
   width: 50%;
+}
+
+.w-\[calc\(\(100\%-5px\)\/2\)\] {
+  width: calc((100% - 5px) / 2);
+}
+
+.w-\[calc\(\(100\%-9px\)\/2\)\] {
+  width: calc((100% - 9px) / 2);
 }
 
 .min-w-\[148px\] {
@@ -935,6 +968,22 @@ html {
 
 .min-w-\[310px\] {
   min-width: 310px;
+}
+
+.min-w-\[1440px\] {
+  min-width: 1440px;
+}
+
+.min-w-\[413px\] {
+  min-width: 413px;
+}
+
+.min-w-\[204px\] {
+  min-width: 204px;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-\[1054px\] {
@@ -973,6 +1022,10 @@ html {
   max-width: 100%;
 }
 
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -995,6 +1048,10 @@ html {
 
 .grow {
   flex-grow: 1;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
 }
 
 .-translate-x-1\/2 {
@@ -1034,6 +1091,10 @@ html {
 
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -1112,10 +1173,6 @@ html {
   gap: 5px;
 }
 
-.gap-\[16px\] {
-  gap: 16px;
-}
-
 .gap-\[9px\] {
   gap: 9px;
 }
@@ -1130,6 +1187,15 @@ html {
 
 .gap-y-\[60px\] {
   row-gap: 60px;
+}
+
+.gap-x-\[5px\] {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.gap-y-\[10px\] {
+  row-gap: 10px;
 }
 
 .overflow-hidden {
@@ -1264,14 +1330,19 @@ html {
   background-color: rgb(27 178 117 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 44 91 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 44 91 / var(--tw-bg-opacity));
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1392,6 +1463,14 @@ html {
 
 .pt-\[60px\] {
   padding-top: 60px;
+}
+
+.pl-\[px\] {
+  padding-left: px;
+}
+
+.pl-\[5px\] {
+  padding-left: 5px;
 }
 
 .text-center {
@@ -1977,6 +2056,10 @@ img {
     margin-bottom: 112px;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1989,8 +2072,24 @@ img {
     height: 540px;
   }
 
+  .lg\:h-\[530px\] {
+    height: 530px;
+  }
+
+  .lg\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .lg\:min-w-\[700px\] {
+    min-width: 700px;
+  }
+
   .lg\:max-w-\[989px\] {
     max-width: 989px;
+  }
+
+  .lg\:max-w-\[700px\] {
+    max-width: 700px;
   }
 
   .lg\:grid-cols-2 {
@@ -2013,8 +2112,25 @@ img {
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:gap-\[45px\] {
     gap: 45px;
+  }
+
+  .lg\:gap-\[9px\] {
+    gap: 9px;
+  }
+
+  .lg\:gap-x-\[9px\] {
+    -moz-column-gap: 9px;
+         column-gap: 9px;
+  }
+
+  .lg\:rounded-\[10px\] {
+    border-radius: 10px;
   }
 
   .lg\:pl-\[100px\] {
@@ -2062,6 +2178,22 @@ img {
 
   .\32xl\:ml-\[240px\] {
     margin-left: 240px;
+  }
+
+  .\32xl\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .\32xl\:w-\[calc\(\(100\%-9px\)\/2\)\] {
+    width: calc((100% - 9px) / 2);
+  }
+
+  .\32xl\:flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .\32xl\:basis-\[700px\] {
+    flex-basis: 700px;
   }
 
   .\32xl\:pl-\[195px\] {
