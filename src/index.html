@@ -26,11 +26,11 @@
 
         <!-- MENU DESKTOP -->
         <nav class="hidden md:flex ml-[20px] xl:ml-[80px] 2xl:ml-[120px] gap-[30px] md:flex-row md:gap-5 flex-shrink-0">
-          <a href="/" class="text-3xl text-grey-100 md:text-sm md:font-bold">Home</a>
-          <a href="/product" class="text-3xl text-grey-100 md:text-sm md:font-bold"> Product </a>
-          <a href="/about" class="text-3xl text-grey-100 md:text-sm md:font-bold"> About us </a>
-          <a href="/pricing" class="text-3xl text-grey-100 md:text-sm md:font-bold"> Pricing </a>
-          <a href="/contact" class="text-3xl text-grey-100 md:text-sm md:font-bold"> Contact </a>
+          <a href="home.html" class="text-3xl text-grey-100 md:text-sm md:font-bold">Home</a>
+          <a href="product.html" class="text-3xl text-grey-100 md:text-sm md:font-bold"> Product </a>
+          <a href="about.html" class="text-3xl text-grey-100 md:text-sm md:font-bold"> About us </a>
+          <a href="pricing.html" class="text-3xl text-grey-100 md:text-sm md:font-bold"> Pricing </a>
+          <a href="contact.html" class="text-3xl text-grey-100 md:text-sm md:font-bold"> Contact </a>
         </nav>
         <div class="hidden md:gap-[20px] items-center ml-[40px] lg:gap-[45px] xl:ml-[200px] 2xl:ml-[240px] md:flex">
           <div class="text-sm text-blue capitalize">Login</div>
@@ -45,17 +45,17 @@
     <!-- HEADER MOBILE -->
     <nav
       class="menu-mobile bg-grey pt-[60px] pb-[98px] relative z-10 opacity-0 -mt-[392px] flex flex-col gap-y-[30px] items-center ease-linear transition-all duration-200 md:hidden">
-      <a href="/" class="text-3xl text-grey-100">Home</a>
-      <a href="/product" class="text-3xl text-grey-100">Product</a>
-      <a href="/pricing" class="text-3xl text-grey-100">Pricing</a>
-      <a href="/about" class="text-3xl text-grey-100">About us</a>
-      <a href="/contact" class="text-3xl text-grey-100">Contact</a>
+      <a href="home.html" class="text-3xl text-grey-100">Home</a>
+      <a href="product.html" class="text-3xl text-grey-100">Product</a>
+      <a href="pricing.html" class="text-3xl text-grey-100">Pricing</a>
+      <a href="about.html" class="text-3xl text-grey-100">About us</a>
+      <a href="contact.html" class="text-3xl text-grey-100">Contact</a>
     </nav>
 
     <!-- RENDER HTML HERE -->
     <div id="root"></div>
 
-    <script type="module" src="./dist/index.js"></script>
+    <script src="bundle.js"></script>
     <script type="module" src="./src/router.js"></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
-import btn from "./models/button.js";
-import carousel from "./models/carousel.js";
-import menu from "./models/menu.js";
-import video from "./models/video.js";
+import './input.css';
+import btn from './models/button';
+import carousel from './models/carousel';
+import menu from './models/menu';
+import video from './models/video';
 
 menu.openMenu();
 menu.closeMenu();
